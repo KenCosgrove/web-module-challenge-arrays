@@ -150,7 +150,7 @@ function filterByWord(flavorList, flavor) {
   let filteredFlavors = [];
   for (let i = 0; i < flavorList.length; i++) {
     if (flavorList[i].includes(flavor)) {
-      filteredFlavors.push();
+      filteredFlavors.push(i);
       console.log(filteredFlavors);
     }
   }
