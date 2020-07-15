@@ -124,11 +124,10 @@ Your function should accept:
 
 and should return a new array that is identical to the old array. You can name the new array however you'd like. */
 
-function copy(flavorList) {
-  let newarr = [...flavorList];
-  console.log(newarr);
+function copy(duplicate, flavorList) {
+  let newcopy = duplicate;
+  return [...flavorList];
 }
-
 /* Task 7: July 7th is "World Chocolate Day" and Baskin Robins wants to create 
 promotional materials highlighting all of their chocolate flavors. Write a function that checks every item in the array 
 for a given string and returns a new array called filteredArray with just these values. Rather than hardcoding "chocolate" into your function,
@@ -148,8 +147,11 @@ DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem.
 hint - you can use the .includes method to help you solve this */
 
 function filterByWord(flavorList, flavor) {
+  let filteredFlavors = [];
   for (let i = 0; i < flavorList.length; i++) {
-    if (flavorList.includes(flavor)) {
+    if (flavorList[i].includes(flavor)) {
+      filteredFlavors.push();
+      console.log(filteredFlavors);
     }
   }
 }
